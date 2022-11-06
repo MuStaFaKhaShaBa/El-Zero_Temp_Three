@@ -8,21 +8,6 @@ window.addEventListener('scroll', _ => {
 });
 btnTop.addEventListener('click', _ => window.scrollTo({ top: 0 }))
 // ----|| To TOP Btn --------||
-// -------------|| S T A R T - M E G A - M E N U - S E C T I O N  ||----------
-window["btn-mege-menu"].addEventListener("click", (_) =>
-  window["mega-menu"].classList.toggle("active")
-);
-
-document.addEventListener("click", (e) => {
-  // hide Mega menu after click any anchor
-  if (
-    e.target.classList.contains("mega-link") ||
-    e.path[1].classList.contains("mega-link")
-  )
-    window["mega-menu"].classList.toggle("active");
-});
-
-// -------------|| E N D - M E G A - M E N U - S E C T I O N  ||----------
 
 // -------------|| S T A R T - O U R - S K I L L S - S E C T I O N  ||----------
 let progresses = Array.from(document.querySelectorAll(".skills .skill span"));
